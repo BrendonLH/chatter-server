@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const port = process.env.PORT||8080;
 const io = new Server(server, {
     cors:{
-        origin: ['http://localhost:3000'],
+        origin: ['http://localhost:3000',"chatter-client-bh.netlify.app" ],
     },
 });
 
